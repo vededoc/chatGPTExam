@@ -22,6 +22,7 @@ export class ChatClient {
                 content: question
             })
             const resp = await this.openai.createChatCompletion({
+                // model: 'gpt-3.5-turbo',
                 model: 'gpt-3.5-turbo',
                 messages: this.messages,
                 stream: true,
